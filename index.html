@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <div class="container">
+      <a class="navbar-brand " href="#"><img src="./logo-dark.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul style="padding-left: 300px;" class="navbar-nav ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Demos
+            </a>
+              <div class="dropdown-menu bg-dark dropdown-div" aria-labelledby="navbarDropdownMenuLink">
+                <div class="d-flex justify-content-around my-3">
+                  <a href="https://sandbox.elemisthemes.com/demo19.html"><img class="image" src="./img5.PNG" /></a>
+                  <a href="https://sandbox.elemisthemes.com/demo11.html"><img class="image" src="./img4.PNG" /></a>
+                  <a href="https://sandbox.elemisthemes.com/demo16.html"><img class="image" src="./img6.PNG" /></a>
+                </div>
+                <div class="d-flex justify-content-around my-3">
+                  <a href="https://sandbox.elemisthemes.com/demo15.html"><img class="image" src="./img3.PNG" /></a>
+                  <a href="https://sandbox.elemisthemes.com/demo17.html"><img class="image" src="./img7.PNG" /></a>
+                  <a href="https://sandbox.elemisthemes.com/demo21.html"><img class="image" src="./img1.PNG" /></a>
+                </div>
+                <div class="d-felx justify-content-around my-3">
+                  <a href="https://sandbox.elemisthemes.com/demo15.html"><img  class="image" src="./img3.PNG" /></a>
+                  <a href="https://sandbox.elemisthemes.com/demo21.html"><img class="image" src="./img1.PNG" /></a>
+                  <a href="https://sandbox.elemisthemes.com/demo6.html"><img class="image" src="./img8.PNG" /></a>
+                </div>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              pages
+            </a>
+            
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="#">shop</a>
+                <a class="dropdown-item" href="#">Contact</a>
+                <a class="dropdown-item" href="#">Career</a>
+                <a class="dropdown-item" href="#">Utility</a>
+                <a class="dropdown-item" href="#">Pricing</a>
+                <a class="dropdown-item" href="#">One page</a>
+                
+              </div>
+            
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+                
+              </div>
+            
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Documentation
+            </a>
+            
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+                
+              </div>
+            
+          </li>
+          <li class="nav-item d-none d-md-block margin-nav">
+            <a href="./contact.html" class="btn btn-lg btn-primary rounded-pill">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container"> 
+    <div class=" d-flex my-5 row  " style="padding-top: 100px;">
+      <div class="col-md-12 offset-md-1 offset-lg-0 col-lg-6 text-center text-lg-start my-5 ">
+        <h1 class="display-4 fs-54 mb-5 mx-md-n5 mx-lg-0 mt-7 text-left font-weight-bold">
+          A digital agency <br class="d-md-none" />
+          specializing on <br class="d-md-none" /><span class="rotator-fade text-primary">
+            <span class="animate__animated animate__fadeInDown" style="display: inline-block">
+              web design</span></span>
+        </h1>
+        <p class="lead fs-lg mb-7 text-left">
+          We are an award winning design agency that strongly believes in the
+          power of creative ideas.
+        </p>
+        <span><a class="btn btn-lg btn-primary rounded-pill me-2">Get Started</a></span>
+      </div>
+      <div class="row col-lg-6 col-md-12">
+        <img class="img-fluid" style=" max-width: 700px; "
+          src="https://sandbox.elemisthemes.com/assets/img/illustrations/i21.png" alt="image" />
+      </div>
+    </div>
+    <div>
+      <div class="text-center my-5 ">
+        <span>Trusted by over 2K+ clients across the world</span>
+      </div>
+      <div class="d-flex justify-content-between row py-5 ">
+        <div class=" col-md-3 col-lg-2 col-sm-3">
+          <img style="height: 30px; width: 130px;" class="img-fluid"
+            src="https://sandbox.elemisthemes.com/assets/img/brands/c1.png" alt="img">
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-3">
+          <img style="height: 30px; width: 130px;" class="img-fluid"
+            src="	https://sandbox.elemisthemes.com/assets/img/brands/c5.png" alt="img">
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-3">
+          <img style="height: 30px; width: 130px;" class="img-fluid"
+            src="https://sandbox.elemisthemes.com/assets/img/brands/c2.png" alt="img">
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-3">
+          <img style="height: 30px; width: 130px;" class="img-fluid"
+            src="https://sandbox.elemisthemes.com/assets/img/brands/c4.png" alt="img">
+        </div>
+        <div class="col-md-6 col-lg-2 col-sm-3">
+          <img style="height: 30px; width: 130px;" class="img-fluid"
+            src="		https://sandbox.elemisthemes.com/assets/img/brands/c6.png" alt="img">
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-3">
+          <img style="height: 30px; width: 130px;" class="img-fluid"
+            src="	https://sandbox.elemisthemes.com/assets/img/brands/c3.png" alt="img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <span class="divider text-soft-primary mx-2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path fill="currentColor"
+          d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z">
+        </path>
+      </svg>
+    </span>
+    <div class="bg-gradient-primary ">
+      <div class="container">
+        <h2 class="font-size text-uppercase text-primary mb-3 text-center">What We Do?</h2>
+        <h3 style="font-size: 30px;" class=" mb-10 px-xxl-10 text-center font-weight-bold">The service we offer is
+          specifically designed<br> to meet your needs.</h3>
+        <div class="container d-flex justify-content-center row">
+          <div class="text-center col-md-12 col-lg-4">
+            <img class="img-fluid" style="height: 200px ; width: 250px;"
+              src="	https://sandbox.elemisthemes.com/assets/img/illustrations/i24.png" alt="img">
+            <h3>Web design</h3>
+            <p class="mb-2">Nulla vitae elit libero, a pharetra augue.<br>Donec id elit non mi porta gravida at eget.
+              Fusce
+              dapibus tellus.</p>
+            <a href="#" class="more hover">Learn More</a>
+          </div>
+          <div class="text-center col-md-12 col-lg-4">
+            <img class="img-fluid" style="height: 200px ; width: 250px;"
+              src="	https://sandbox.elemisthemes.com/assets/img/illustrations/i19.png" alt="img">
+            <h3>Graphic Design</h3>
+            <p class="mb-2">Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue<br> laoreet. Sed posuere
+              consectetur.</p>
+            <a href="#" class="more hover">Learn More</a>
+
+          </div>
+          <div class="text-center col-md-12 col-lg-4">
+            <img class="img-fluid" style="height: 200px ; width: 250px;"
+              src="https://sandbox.elemisthemes.com/assets/img/illustrations/i18.png" alt="img">
+            <h3>3D Animation</h3>
+            <p class="mb-2">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent<br> commodo cursus
+              magna
+              scelerisque.</p>
+            <a href="#" class="more hover">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="d-flex container my-5">
+        <div class="row d-flex">
+          <div class="col-lg-6 col-md-12">
+            <h2 class=" text-uppercase text-primary mb-3 ">Our Strategy</h2>
+            <h3 class="display-4 mb-4 font-weight-bold">Here are 3 working steps to organize our projects.</h3>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam<br> venenatis vestibulum. Etiam porta sem
+              malesuada
+              magna<br> mollis euismod. Nullam id dolor id nibh ultricies vehicula<br> ut id elit Nullam quis risus eget
+              urna
+              mollis.</p>
+            <p class="mb-6">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulumv<br> id ligula porta felis
+              euismod
+              semper. Aenean lacinia bibendum<br> nulla sed consectetur.</p>
+            <a href="#" class="btn btn-primary rounded-pill mb-0 my-3 btn-lg">Learn More</a>
+
+          </div>
+          <div class="col-lg-6 col-md-12 my-5">
+            <div class="row shadow p-2 mb-5 bg-body rounded card-body col-md-12">
+              <div class="card-body ">
+                <div class="d-flex flex-row">
+                  <div>
+                    <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span
+                        class="number">01</span></span>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Collect Ideas</h4>
+                    <p class="mb-0">Nulla vitae elit libero pharetra augue dapibus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left:50px;" class="col-md-12 shadow p-2 mb-5  bg-body rounded card-body ">
+              <div class="card-body">
+                <div class="d-flex flex-row">
+                  <div>
+                    <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span
+                        class="number">01</span></span>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Data Analysis</h4>
+                    <p class="mb-0">Vivamus sagittis lacus vel augue laoreet..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12 shadow p-2 mb-5 bg-body rounded card-body ml-5 ">
+              <div class="card-body">
+                <div class="d-flex flex-row">
+                  <div>
+                    <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span
+                        class="number">01</span></span>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Finalize Product</h4>
+                    <p class="mb-0">Cras mattis consectetur purus sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 50px;" class=" container">
+        <div class="d-flex row">
+          <div class="col-lg-6 col-md-12">
+            <img class="img-fluid" style="height: 500px;"
+              src="https://sandbox.elemisthemes.com/assets/img/illustrations/i22.png" alt=" img">
+
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div style="padding-left: 90px; padding-top: 100px">
+              <h5 style="color: #0d6efd;">why chose us?</h5>
+              <h3>We bring solutions to make life easier.</h3>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Professional design
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+                      sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna,
+                      vel.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Top-Notch Support
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                      ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
+                      Praesent
+                      commodo cursus magna, vel.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Header and Slider options
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                      ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
+                      Praesent
+                      commodo cursus magna, vel.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="divider text-light">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path fill="currentColor"
+          d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z">
+        </path>
+      </svg>
+    </span>
+    <div class="container pt-12 pt-lg-8 pb-14 pb-md-16">
+      <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0 mb-11">
+        <div class="col-lg-4 text-center text-lg-start">
+          <h5 class="text-uppercase text-primary mb-3">Company Facts</h5>
+          <h4 class="display-3 mb-4 pe-xxl-5 fw-bold">We are proud of our design team</h4>
+          <p class="mb-0 pe-xxl-11">Just sit back and relax while we take care of your business needs for you.</p>
+        </div>
+
+        <div class="col-lg-8 mt-lg-5">
+          <div class="row align-items-center counter-wrapper gy-6 text-center">
+            <div class="col-md-4 py-5">
+              <div class="icon btn btn-circle btn-lg  pe-none mb-4"> <i class="fa-sharp fa-solid fa-user"></i> </div>
+              <h3 class="counter" style="visibility: visible;">1000+</h3>
+              <p>Completed Projects</p>
+            </div>
+            <!--/column -->
+            <div class="col-md-4">
+              <div class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"> <i
+                  class="fa-brands fa-facebook-messenger"></i></div>
+              <h3 class="counter" style="visibility: visible;">50K+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <!--/column -->
+            <div class="col-md-4">
+              <div class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4"><i
+                  class="fa-solid fa-user-check"></i>
+              </div>
+              <h3 class="counter" style="visibility: visible;">20+</h3>
+              <p>Awards Won</p>
+            </div>
+            <!--/column -->
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row grid-view gy-6 gy-xl-0 my-5">
+        <div class="col-md-6 col-xl-3">
+          <div class="card shadow-lg my-5">
+            <div class="card-body px-5 py-5 ">
+              <img style="width: 80px; height: 80px;" class="rounded-circle mb-4" src="./boy.jpg" alt="">
+              <h4 class="mb-1">Coriss Ambady</h4>
+              <div class="meta mb-2">Financial Analyst</div>
+              <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter p-2"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-basketball p-2"></i></a>
+              </nav>
+              <!-- /.social -->
+            </div>
+            <!--/.card-body -->
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 my-5 ">
+          <div class="card shadow-lg">
+            <div class="card-body px-5 py-5 ">
+              <img style="width: 80px; height: 80px;" class="rounded-circle mb-4" src="./girl.jpg" alt="">
+              <h4 class="mb-1">Cory Zamora</h4>
+              <div class="meta mb-2">Marketing Specialist</div>
+              <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter p-2"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-basketball p-2"></i></a>
+              </nav>
+              <!-- /.social -->
+            </div>
+            <!--/.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <div class="col-md-6 col-xl-3 my-5 ">
+          <div class="card shadow-lg">
+            <div class="card-body px-5 py-5">
+              <img style="width: 80px; height: 80px;" class="rounded-circle mb-4" src="./women entrepreneurship.jpg"
+                alt="">
+              <h4 class="mb-1">Nikolas Brooten</h4>
+              <div class="meta mb-2">Sales Manager</div>
+              <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter p-2"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-basketball p-2"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="card shadow-lg my-5">
+            <div class="card-body px-5 py-5 ">
+              <img style="width: 80px; height: 80px;" class="rounded-circle mb-4" src="./boy.jpg" alt="">
+              <h4 class="mb-1">Jackie Sanders</h4>
+              <div class="meta mb-2">Investment Planner</div>
+              <p class="mb-2">Fermentum massa justo sit amet risus morbi leo.</p>
+              <nav class="nav social mb-0">
+                <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter p-2"></i></a>
+                <a href="#"><i class="fa-sharp fa-solid fa-basketball p-2"></i></a>
+              </nav>
+              <!-- /.social -->
+            </div>
+            <!--/.card-body -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class=" container flickity-viewport-visible my-5" data-flickity='{"contain": true,  "pageDots": false}'>
+      <div class="w-100 px-2" style="max-width: 500px;">
+        <div class="card border-0">
+          <img class="card-img-top h-100 " src="https://sandbox.elemisthemes.com/assets/img/photos/sp1.jpg" alt="..." />
+        </div>
+        <div class="card-body">
+          <p class="flick">
+            <a class="display-6 text-dark  " style="text-decoration: none;"
+              href="https://sandbox.elemisthemes.com/single-project.html">
+              Cras Frementum Sem
+            </a>
+          </p>
+          <p class="text-secondary">
+            Mobile design
+          </p>
+
+        </div>
+      </div>
+      <div class="w-100 px-2" style="max-width: 500px;">
+        <div class="card border-0">
+          <img class="card-img-top h-100 " src="https://sandbox.elemisthemes.com/assets/img/photos/sp2.jpg" alt="..." />
+        </div>
+        <div class="card-body">
+          <a class="display-6 text-dark text-primary-hover " style="text-decoration: none;"
+            href="https://sandbox.elemisthemes.com/single-project.html">
+            Cras Frementum Sem
+          </a>
+          <p class="text-secondary">
+            Mobile design
+          </p>
+
+        </div>
+      </div>
+      <div class="w-100 px-2" style="max-width: 500px;">
+        <div class="card border-0">
+          <img class="card-img-top h-300" src="https://sandbox.elemisthemes.com/assets/img/photos/sp3.jpg" alt="..." />
+        </div>
+        <div class="card-body">
+          <p class="flick">
+            <a class="display-6 text-dark  " style="text-decoration: none;"
+              href="https://sandbox.elemisthemes.com/single-project.html">
+              Cras Frementum Sem
+            </a>
+          </p>
+          <p class="text-secondary">
+            Mobile design
+          </p>
+
+        </div>
+
+      </div>
+      <div class="w-100 px-2" style="max-width: 500px;">
+        <div class="card border-0">
+          <img class="card-img-top h-300" src="https://sandbox.elemisthemes.com/assets/img/photos/sp4.jpg" alt="..." />
+        </div>
+        <div class="card-body">
+          <p class="flick">
+            <a class="display-6 text-dark  " style="text-decoration: none;"
+              href="https://sandbox.elemisthemes.com/single-project.html">
+              Cras Frementum Sem
+            </a>
+          </p>
+          <p class="text-secondary">
+            Mobile design
+          </p>
+
+        </div>
+
+      </div>
+      <div class="w-100 px-2" style="max-width: 500px;">
+        <div class="card border-0">
+          <img class="card-img-top h-300" src="https://sandbox.elemisthemes.com/assets/img/photos/sp5.jpg" alt="..." />
+        </div>
+        <div class="card-body">
+          <p class="flick">
+            <a class="display-6 text-dark  " style="text-decoration: none;"
+              href="https://sandbox.elemisthemes.com/single-project.html">
+              Cras Frementum Sem
+            </a>
+          </p>
+          <p class="text-secondary">
+            Mobile design
+          </p>
+
+        </div>
+      </div>
+      <div class="w-100 px-2" style="max-width: 500px;">
+        <div class="card border-0">
+          <img class="card-img-top h-300" src="https://sandbox.elemisthemes.com/assets/img/photos/sp6.jpg" alt="..." />
+        </div>
+        <div class="card-body">
+          <p class="flick">
+            <a class="display-6 text-dark  " style="text-decoration: none;"
+              href="https://sandbox.elemisthemes.com/single-project.html">
+              Cras Frementum Sem
+            </a>
+          </p>
+          <p class="text-secondary">
+            Mobile design
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <span class="divider text-light bg-gradient-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path fill="currentColor"
+          d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z">
+        </path>
+      </svg>
+    </span>
+    <div class="wrapper bg-gradient-primary">
+      <div class="container pt-lg-5 pb-5 pb-md-17">
+        <div class="row text-center">
+          <div class="col-lg-8 offset-lg-2">
+            <h2 class="font-size text-uppercase text-primary mb-3">Happy Customers</h2>
+            <h3 class="display-6 py-5">Don't take our word for it. See what customers are saying about us.</h3>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="row">
+            <div class="item col-md-6 col-xl-4 my-3">
+              <div class="card shadow-lg">
+                <div class="card-body py-5 px-5 ">
+                  <div class="my-3">
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+
+                  </div>
+
+
+                  <blockquote class="border-0 mb-0">
+                    <p>“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula
+                      porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”</p>
+                    <div class="blockquote-details ">
+                      <img style="height: 70px;width: 70px;" class="rounded-circle img-fluid" src="./boy.jpg" alt="">
+                      <div class="info">
+                        <h5 class="mb-1">Coriss Ambady</h5>
+                        <p class="mb-0">Financial Analyst</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="item col-md-6 col-xl-4 my-3">
+              <div class="card shadow-lg">
+                <div class="card-body py-5 px-5">
+                  <div class="my-3">
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+
+                  </div>
+                  <blockquote class="border-0 mb-0">
+                    <p>“Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet.
+                      Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur
+                      purus sit amet fermentum. Aenean lacinia bibendum nulla sed.”</p>
+                    <div class="blockquote-details">
+                      <img style="height: 70px;width: 70px;" class="rounded-circle img-fluid" src="./girl.jpg" alt="">
+                      <div class="info">
+                        <h5 class="mb-1">Coriss Ambady</h5>
+                        <p class="mb-0">Financial Analyst</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="item col-md-6 col-xl-4 my-3">
+              <div class="card shadow-lg">
+                <div class="card-body py-5 px-5">
+                  <div class="my-3">
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+
+                  </div>
+                  <blockquote class="border-0 mb-0">
+                    <p>“Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                      dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui
+                      consectetur adipiscing elit.”</p>
+                    <div class="blockquote-details">
+                      <img style="height: 70px;width: 70px;" class="rounded-circle img-fluid"
+                        src="./women entrepreneurship.jpg" alt="">
+                      <div class="info">
+                        <h5 class="mb-1">Nikolas Brooten</h5>
+                        <p class="mb-0">Sales Manager</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="item col-md-6 col-xl-4 my-3">
+              <div class="card shadow-lg">
+                <div class="card-body py-5 px-5">
+                  <div class="my-3">
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+
+                  </div>
+                  <blockquote class="border-0 mb-0">
+                    <p>“Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor.
+                      Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor
+                      libero condimentum ac laoreet vitae.”</p>
+                    <div class="blockquote-details">
+                      <img style="height: 70px;width: 70px;" class="rounded-circle img-fluid" src="./girl.jpg"
+                        srcset="./assets/img/avatars/te4@2x.jpg 2x" alt="">
+                      <div class="info">
+                        <h5 class="mb-1">Coriss Ambady</h5>
+                        <p class="mb-0">Financial Analyst</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="item col-md-6 col-xl-4 my-3">
+              <div class="card shadow-lg">
+                <div class="card-body py-5 px-5">
+                  <div class="my-3">
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+
+                  </div>
+                  <blockquote class="border-0 mb-0">
+                    <p>“Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus
+                      magnis dis montes, nascetur ridiculus mus. Donec sed odio dui. Nulla vitae elit libero.”</p>
+                    <div class="blockquote-details">
+                      <img style="height: 70px;width: 70px;" class="rounded-circle img-fluid" src="./boy.jpg"
+                        srcset="./assets/img/avatars/te5@2x.jpg 2x" alt="">
+                      <div class="info">
+                        <h5 class="mb-1">Jackie Sanders</h5>
+                        <p class="mb-0">Investment Planner</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="item col-md-6 col-xl-4 my-3">
+              <div class="card shadow-lg">
+                <div class="card-body py-5 px-5">
+                  <div class="my-3">
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+                    <span class="fa fa-star text-warning"></span>
+
+                  </div>
+                  <blockquote class="border-0 mb-0">
+                    <p>“Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum
+                      sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.”</p>
+                    <div class="blockquote-details">
+                      <img style="height: 70px;width: 70px;" class="rounded-circle img-fluid" src="./girl.jpg" alt="">
+                      <div class="info">
+                        <h5 class="mb-1">Laura Widerski</h5>
+                        <p class="mb-0">Sales Specialist</p>
+                      </div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-6 mb-0">
+          <h2 class="text-uppercase text-primary mb-4">FAQ</h2>
+          <h3 class="display-6 mb-4">If you don't see an answer to your question, you can send us an email from our
+            contact form.</h3>
+          <p class="mb-6">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+            elit. Nullam quis risus eget urna mollis ornare.</p>
+          <a href="#" class="btn btn-primary rounded-pill">All FAQ</a>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  How do i get my subscription list?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-3">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Are there any discounts for people in need?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-3">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Do you offer a free trial edit?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-3">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  How do i reset my account pasword
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <br><br>
+  <div class="divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+      <path fill="currentColor" d="M1260,1.65c-60-5.07-119.82,2.47-179.83,10.13s-120,11.48-180,9.57-120-7.66-180-6.42c-60,1.63-120,11.21-180,16a1129.52,1129.52,0,0,1-180,0c-60-4.78-120-14.36-180-19.14S60,7,30,7H0v93H1440V30.89C1380.07,23.2,1319.93,6.15,1260,1.65Z"></path>
+    </svg>
+  </div>
+  <div class="bg-dark p-6">
+    <div class="container pt-12 pt-lg-6 pb-13 pb-md-15 ">
+      <div class="d-lg-flex flex-row align-items-lg-center">
+        <h3 class="display-4 mb-6 mb-lg-0 text-white">Join our community by using our services and grow your business.</h3>
+        <a href="#" class="btn btn-primary rounded-pill mb-0 text-nowrap">Try It For Free</a>
+      </div>
+      <!--/div -->
+      <hr class="mt-6 mb-6 text-light">
+      <div class="row gy-6 gy-lg-0">
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <img class="mb-4" src="	https://sandbox.elemisthemes.com/assets/img/logo-light.png"  alt="">
+            <p class="mb-4 text-light">© 2022 Sandbox. <br class="d-none d-lg-block">All rights reserved.</p>
+            <nav class="nav social social-white">
+              <a href="#"><i class="uil uil-twitter text-light"></i></a>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+              <a href="#"><i class="uil uil-dribbble"></i></a>
+              <a href="#"><i class="uil uil-instagram"></i></a>
+              <a href="#"><i class="uil uil-youtube"></i></a>
+            </nav>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+            <address class="pe-xl-15 pe-xxl-17 text-light">Moonshine St. 14/05 Light City, London, United Kingdom</address>
+            <a style="text-decoration: none;"class="text-light" href="mailto:#">info@email.com</a><br> 00 (123) 456 78 90
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Learn More</h4>
+            <ul class="list-unstyled mb-0">
+              <li><a style="text-decoration: none;" class="text-light" href="#">About Us</a></li>
+              <li><a style="text-decoration: none;" class="text-light"  href="#">Our Story</a></li>
+              <li><a style="text-decoration: none;" class="text-light"  href="#">Projects</a></li>
+              <li><a style="text-decoration: none;" class="text-light"  href="#">Terms of Use</a></li>
+              <li><a style="text-decoration: none;" class="text-light"  href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+            <p class="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
+            <div class="newsletter-wrapper">
+              <!-- Begin Mailchimp Signup Form -->
+              <div id="mc_embed_signup2">
+                <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate dark-fields" target="_blank" novalidate="">
+                  <div id="mc_embed_signup_scroll2">
+                    <div class="mc-field-group input-group form-floating">
+                      <input type="email" value="" name="EMAIL" class="required email form-control" placeholder="Email Address" id="mce-EMAIL2">
+                      <label for="mce-EMAIL2">Email Address</label>
+                      <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-primary ">
+                    </div>
+                    <div id="mce-responses2" class="clear">
+                      <div class="response" id="mce-error-response2" style="display:none"></div>
+                      <div class="response" id="mce-success-response2" style="display:none"></div>
+                    </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ 
+  
+
+
+
+
+</body>
+
+</html>
